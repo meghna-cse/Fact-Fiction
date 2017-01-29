@@ -1,0 +1,57 @@
+/*Social Links*/
+	#sociallinks{
+		position: fixed;
+    	bottom: 200px;
+    	right: 13px;
+	}
+
+	#sociallinks li {
+    	list-style: none;
+    	height: 39px;
+    	padding: 2px;
+    	width: 40px;
+	}
+
+	#sociallinks a {
+	    height: 39px;
+    	width: 38px;
+    	display: block;
+    	position: fixed;
+    	margin-bottom: 3px;
+	}
+
+	#sociallinks #facebook { 
+		background: url("images/social-icons/FB.jpg");
+    	background-size: cover;
+    }
+
+	#sociallinks #facebook:hover { 
+		-webkit-transform: scale(1.045); 
+	}
+
+	#sociallinks #tumblr { 
+		background: url("images/social-icons/tum.jpg");
+    	background-size: cover;	
+    }
+
+	#sociallinks #tumblr:hover { 
+		-webkit-transform: scale(1.045);
+	}
+
+	#sociallinks #twitter { 
+		background: url("images/social-icons/twi.jpg");
+	    background-size: cover;	
+	}
+
+	#sociallinks #twitter:hover { 
+		-webkit-transform: scale(1.045); 
+	}
+
+	#sociallinks #instagram { 
+		background: url("images/social-icons/inst.jpg");
+	    background-size: cover; 
+	}
+
+	#sociallinks #instagram:hover { 
+		-webkit-transform: scale(1.045); 
+	}	
