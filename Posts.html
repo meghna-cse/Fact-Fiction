@@ -1,0 +1,273 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<title>Facts in Fiction: Posts</title>
+		
+<!--CSS files-->
+		<link rel="stylesheet" type="text/css" href="styles/sidebar.css">
+		<link rel="stylesheet" type="text/css" href="styles/social-links.css">
+
+<!--Fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+
+<style>
+		*{
+		margin:0;
+		padding:0;
+		}
+
+		body{
+			margin: 0 auto;
+			padding: 0;
+			overflow: scroll;
+			height: 100%; 
+			max-height: 100%; 
+			font-family:Sans-serif;
+			line-height: 1.2;
+		}
+			
+		main{
+			position: fixed;
+			top: 0; 
+			left: 230px; 
+			right: 0;
+			bottom: 0;
+			overflow: auto; 
+			background: #fff;
+		}
+		
+		.content{
+			margin: 15px;
+		}
+		
+		p {
+			color: #555;
+			font-size: 15px;
+   			max-width: 680px;
+   			text-align: justify;
+		}
+
+/*Featured content*/
+	#main{
+		margin-left: 200px;
+	}
+
+	.featured {
+		list-style: none;
+		padding: 0;
+		margin: 0 auto;
+		text-align: center;
+		width: 100%;
+	}
+
+	.featured li {
+		display: inline-block;
+		margin: 10px;
+    	width: 220px;
+	}
+
+	.featured li > a,
+	.featured li > a img {
+   		width: 100%;
+		display: block;
+    	-webkit-transition: all 0.3s ease-in-out;
+    }
+
+	.featured li > a img:hover {
+    	border-radius: 50%;
+	}
+
+	.top-content img{
+		height: 350px;
+		width: 80px;
+		border: 10px dashed #FFF0F5;
+	}
+
+/*Articles*/
+	#articles{
+   		list-style:none;
+    	margin: 0 auto;
+    	max-width: 600px;
+    	text-align: center;
+    	padding: 0;
+	}
+
+	#articles li{
+   		display: block;
+    	box-sizing:border-box;
+   		border-radius: 3px;
+    	text-align: left;
+    	box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.08);
+    	border:1px solid #cfcfcf;
+    	overflow: hidden;
+    	background-color: #fff;
+    	font: normal 13px sans-serif;
+    	margin-bottom: 40px;
+    	max-width: 575px;
+	}
+	
+	/* Article photo */
+	#articles li > a{
+    	float: left;
+    	width: 200px;
+    	height: 200px;
+    	display: block;
+    	background-size: cover;
+	}
+
+	#articles li div{
+    	float: left;
+    	box-sizing: border-box;
+    	max-width: 350px;
+    	padding: 30px;
+	}
+
+	/* Article title */
+	#articles li div h2{
+    	font-size: 16px;
+    	overflow: hidden;
+   		text-overflow: ellipsis;
+    	white-space: nowrap;
+    	margin:0;
+	}	
+
+	#articles li div h2 a{
+    	color: #2b2b2b;
+    	text-decoration: none;
+	}
+
+	/* Article excerpt */
+	#articles li div p{
+    	line-height: 20px;
+    	color: #5d5d5d;
+    	margin: 20px 0;
+	}
+
+	#articles li a.read-more{
+    	background-color: #87bcd7;
+    	font-size: 12px;
+    	color: #ffffff;
+    	text-decoration: none;
+    	padding: 4px 8px;
+    	border-radius: 2px;
+    	margin: 20px 0;
+    	font-weight: bold;
+	}
+
+	</style>
+</head>
+
+<body>		
+
+<div id="main">
+
+<!--Featured Content-->
+	<ul class="featured">
+		<li>
+			<a href="#" class="top-content">
+				<img src="images/Posts/Book1(A&D).jpg" alt="Angels & Demons"/>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="top-content">
+				<img src="images/Posts/Book2(TGG).jpg" alt="The Great Gatsby"/>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="top-content">
+				<img src="images/Posts/Book3(TDOTJ).jpg" alt="The Day of the Jackal"/>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="top-content">
+				<img src="images/Posts/Book4(TGF).jpg" alt="The Godfather"/>
+			</a>
+		</li>
+	</ul>
+<!---->
+</div>
+
+<br /><br />
+
+<!--Articles-->
+	<ul id="articles">
+    <li>
+        <a href="#" style="background-image: url('images/Posts/Book2(TGG).jpg')"></a>
+        <div>
+            <h2><a href="#">The Great Gatsby</a></h2>
+            <p>This exemplary novel of the Jazz Age has been acclaimed by generations of readers. The story of the fabulously wealthy Jay Gatsby and his love for the beautiful Daisy Buchanan, of lavish parties on Long Island at a time when The New York Times noted “gin was the national drink and sex the national obsession,” it is an exquisitely crafted tale of America in the 1920s.</p> <!--taken from Goodreads.com-->
+            <a href="#" class="read-more">Read more &rarr;</a>
+        </div>
+    </li>
+    <li>
+        <a href="#" style="background-image: url('images/Posts/Book1(A&D).jpg')"></a>
+         <div>
+            <h2><a href="#">Angels and Demons</a></h2>
+            <p>When world-renowned Harvard symbologist Robert Langdon is summoned to a Swiss research facility to analyze a mysterious symbol—seared into the chest of a murdered physicist—he discovers evidence of the unimaginable: the resurgence of an ancient secret brotherhood known as the Illuminati ... the most powerful underground organization ever to walk the...</p>
+            <!--taken from Goodreads.com-->
+             <a href="#" class="read-more">Read more &rarr;</a>
+        </div>
+    </li>
+	</ul>
+<!---->
+
+
+</div>
+
+	
+		
+<!--Sidebar-->
+		<nav id="nav">
+		<!--waves effect-->
+		<a href="MainPage.html">
+			<div class="card">
+ 				<div class="inner"></div>
+  				<div class="inner"></div>
+  				<div class="inner"></div>
+			</div>
+		</a>
+		<!---->
+
+			<div class="content">
+				<a href="MainPage.html"><img src="images/logo.png"  width="150"></a><br /><br />
+				<ul style="font-family: 'Poiret One', cursive;"><b>
+					
+					<div id="current-page" class="navback" data-text="Posts"><li><span>Posts</span></li></div>
+
+					<a href="#"><div class="navback over" data-text="Index"><li><span>Index</span></li></div></a>
+
+					<a href="About Us.html"><div class="navback over" data-text="About Us"><li><span>About Us</span></li></div></a>
+
+					<a href="Contact Us.html"><div class="navback over" data-text="Contact Us"><li><span>Contact Us</span></li></div></a>
+
+					<a href="Subscribe.html"><div class="navback over" data-text="Subscribe"><li><span>Subscribe</span></li></div></a>
+
+					<a href="Feedback.html"><div class="navback over" data-text="Feedback"><li><span>Feedback</span></li></div></a>
+
+				</b>
+				</ul>
+			</div>
+		</nav>
+<!---->
+
+<!--Social Media links-->
+<ul id="sociallinks">	
+    <li>
+	    <a id="facebook" href="https://www.facebook.com"></a>
+    </li>
+    <li>
+    	<a id="tumblr" href="https://tumblr.com"></a>
+    </li>
+    <li>
+	     <a id="twitter" href="https://twitter.com"></a>
+    </li>
+    <li>
+    	<a id="instagram" href="#"></a>
+    </li>
+</ul>
+<!---->
+
+</body>
+</html>
