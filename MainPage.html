@@ -1,12 +1,29 @@
 <!DOCTYPE html>
+<html>
 <head>
-	<title>Facts in Fiction</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <title>Fact in Fiction</title>
+
+<!--Bootstrap-->
+	<!-- Bootstrap core CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!--CSS files-->
 	<link rel="stylesheet" type="text/css" href="styles/social-links.css">
+	<link rel="stylesheet" type="text/css" href="styles/subscribe.css">
 
 <!--Fonts-->
-	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Satisfy|Rock+Salt|Poiret+One" rel="stylesheet">
+ 
 
 <style>
 	*{
@@ -21,7 +38,7 @@
 	}
 
 	#header {
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       width: 100%;
@@ -30,43 +47,40 @@
     }
 	
 	#logo {
-      padding:10px;
+      margin-top: -29px;
     }
 
 	.applewrap {
 		position: center;
-		width: 100%;
+		width: 100%; 
 		display: block;
 		height: 150px;
 		-webkit-border-radius: 4px;
 		-moz-border-radius: 4px;
 		border-radius: 4px;
-		-webkit-transform: rotate(345deg) scale(1) skew(1deg) translate(-100px);	
 	}
  	
  	.applewrap .col {
-		float: left;
+		float: top;
 		box-sizing: border-box;
 		width: 260px;
 		height: 150px;
 		padding: 12px 7px 6px 22px;
-
 		color: #343434;
 		border: 1px solid;
-		border-color: white;
 		border-right: 1px solid #dadada;
 		outline-style:dashed;
 		outline-width:10px;
 		outline-color: #000000;
 		outline-offset: 0px;
-		margin-top: 18%;
 		-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
 		box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
-		background: -webkit-linear-gradient(bottom,rgba(0,0,0,1),rgba(0,0,0,.2));
+		background: -webkit-linear-gradient(top,rgba(0,0,0,1),rgba(0,0,0,.2));
 	}
 
 	.nav{
-		margin-left: 1%;	
+		margin: 0 auto;
+		position: fixed;
 	}
 
 	p{
@@ -83,7 +97,7 @@
 	}
 
 	.linkname:hover{
-		-webkit-transform: scale(1.045)  translate(0px);
+ 		-webkit-transform: translate(-7px);
 	}
 	
 </style>
@@ -92,45 +106,83 @@
 
 	<header id="header">
       <div id="logo">
-        <h1><center><img src="images/image1.jpg"></center></h1>
+        <h1><center><img src="images/image1.png"></center></h1>
       </div>
 	</header>
 
 <!--Navigation-->
 <div class="applewrap nav">
-	<div class="applewrap col linkname">
+	<div class="applewrap col linkname" style="margin-top: 10px;">
 		<p style="color: lightgreen"><a href="Posts.html"  style="text-decoration:none; color: lightgreen;">POSTS</a></p>
 	</div>
-	<div class="applewrap col linkname">
-		<p style="color: lightgreen;">INDEX</p>
-	</div>
-	<div class="applewrap col linkname">
+	<div class="applewrap col linkname" style="margin-top: 9px;">
 		<p style="padding:38px;"><a href="About Us.html"  style="text-decoration:none; color: white;">ABOUT US</a></p>
 	</div>
-	<div class="applewrap col linkname">
+	<div class="applewrap col linkname" style="margin-top: 9px;">
 		<p style="padding: 30px;"><a href="Contact Us.html"  style="text-decoration:none; color: white;">CONTACT US</a></p>
 	</div>
-	<div class="applewrap col linkname">
+	<div class="applewrap col linkname" style="margin-top: 9px;">
 		<p ><a href="Feedback.html"  style="text-decoration:none; color: white;">FEEDBACK</a></p>
 	</div>
 </div>
 <!---->
 
 <!--Social Media links-->
-<ul id="sociallinks">
-    <li>
-	    <a id="facebook" href="https://www.facebook.com"></a>
-    </li>
-    <li>
-    	<a id="tumblr" href="https://tumblr.com"></a>
-    </li>
-    <li>
-	     <a id="twitter" href="https://twitter.com"></a>
-    </li>
-    <li>
-    	<a id="instagram" href="#"></a>
+<ul id="sociallinks">	
+		<li>
+        	<a href="github.com/magiie/FactFiction"><i class="fa fa-github"></i></a>
+        </li>
+ 		<li>
+ 			<a href="https://twitter.com"> <i class="fa fa-twitter-square"></i></a>
+ 		</li>
+        <li>
+        	<a href="www.facebook.com"><i class="fa fa-facebook-square"></i></a>
+        </li>
+        <li>
+        	<a href="https://tumblr.com"><i class="fa fa-tumblr-square"></i></a>
+        </li>
+        <li>
+        	<a href="https://linkedin.com"><i class="fa fa-linkedin-square"></i></a>
+        </li>
     </li>
 </ul>
 <!---->
 
+<!--Subscribe-->
+<div id="subscribe">
+	<div id="subscribe-header"><b>SUBSCRIBE</b></div>
+	<div id="subscribe-body">
+		<form action="" method="post">
+  			<input type="text" placeholder="Your name">
+ 			<input type="text" placeholder="Your email">
+ 			<button>Subscribe now!</button>
+ 		</form>		
+	</div>
+</div>
+<!---->
+
+<script>
+;!( function( w, d ) {
+  'use strict';
+  	var titles = d.querySelectorAll( '#subscribe-header' ),
+		i = 0,
+		len = titles.length;
+		
+	for ( ; i < len; i++ )
+		titles[ i ].onclick = function( e ) {
+		
+			for ( var j = 0; j < len; j++ )
+				if ( this != titles[ j ] )
+					titles[ j ].parentNode.className = titles[ j ].parentNode.className.replace( / open/i, '' );
+		
+			var cn = this.parentNode.className;
+		
+			this.parentNode.className = ~cn.search( /open/i ) ? cn.replace( / open/i, '' ) : cn + ' open';
+		
+		};
+
+})( this, document );
+</script>
+
 </body>
+</html>

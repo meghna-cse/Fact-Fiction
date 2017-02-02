@@ -1,14 +1,31 @@
- <!DOCTYPE html>
-	<head>
-		<title>Facts in Fiction: Feedback</title>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <title>Fact in Fiction</title>
+
+<!--Bootstrap-->
+	<!-- Bootstrap core CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+	<title>Facts in Fiction: Feedback</title>
 		
 <!--CSS files-->
 		<link rel="stylesheet" type="text/css" href="styles/sidebar.css">
 		<link rel="stylesheet" type="text/css" href="styles/social-links.css">
+		<link rel="stylesheet" type="text/css" href="styles/subscribe.css">
 
 <!--Fonts-->
-		<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Satisfy|Rock+Salt|Poiret+One" rel="stylesheet">
 
 <style>
 		*{
@@ -125,15 +142,14 @@
 				<a href="MainPage.html"><img src="images/logo.png"  width="150"></a><br /><br />
 				<ul style="font-family: 'Poiret One', cursive;"><b>
 					
-					<a href="Posts.html"><div class="navback over" data-text="Posts"><li><span>Posts</span></li></div></a>
+					<a href="Posts.html"><div class="navback over" ><li><span>Posts</span></li></div></a>
 
-					<a href="About Us.html"><div class="navback over" data-text="About Us"><li><span>About Us</span></li></div></a>
+					<a href="About Us.html"><div class="navback over" ><li><span>About Us</span></li></div></a>
 
-					<a href="Contact Us.html"><div class="navback over" data-text="Contact Us"><li><span>Contact Us</span></li></div></a>
+					<a href="Contact Us.html"><div class="navback over" ><li><span>Contact Us</span></li></div></a>
 
-					<a href="Subscribe.html"><div class="navback over" data-text="Subscribe"><li><span>Subscribe</span></li></div></a>
-
-					<div id="current-page" class="navback" data-text="Feedback"><li><a href="#"><span>Feedback</span></a></li></div>
+				 
+					<div id="current-page" class="navback" ><li><span><b>Feedback</b></span></li></div>
 
 					<li style="color: gray; margin-top: 80px; "><span>Made by Meghna Jaglan</span></li></a>
 
@@ -145,19 +161,60 @@
 
 <!--Social Media links-->
 <ul id="sociallinks">	
-    <li>
-	    <a id="facebook" href="https://www.facebook.com"></a>
-    </li>
-    <li>
-    	<a id="tumblr" href="https://tumblr.com"></a>
-    </li>
-    <li>
-	     <a id="twitter" href="https://twitter.com"></a>
-    </li>
-    <li>
-    	<a id="instagram" href="#"></a>
+		<li>
+        	<a href="github.com/magiie/FactFiction"><i class="fa fa-github"></i></a>
+        </li>
+ 		<li>
+ 			<a href="https://twitter.com"> <i class="fa fa-twitter-square"></i></a>
+ 		</li>
+        <li>
+        	<a href="www.facebook.com"><i class="fa fa-facebook-square"></i></a>
+        </li>
+        <li>
+        	<a href="https://tumblr.com"><i class="fa fa-tumblr-square"></i></a>
+        </li>
+        <li>
+        	<a href="https://linkedin.com"><i class="fa fa-linkedin-square"></i></a>
+        </li>
     </li>
 </ul>
 <!---->
+
+ 
+<!--Subscribe-->
+<div id="subscribe">
+	<div id="subscribe-header"><b>SUBSCRIBE</b></div>
+	<div id="subscribe-body">
+		<form action="" method="post">
+  			<input type="text" placeholder="Your name">
+ 			<input type="text" placeholder="Your email">
+ 			<button>Subscribe now!</button>
+ 		</form>		
+	</div>
+</div>
+<!---->
+
+<script>
+;!( function( w, d ) {
+  'use strict';
+  	var titles = d.querySelectorAll( '#subscribe-header' ),
+		i = 0,
+		len = titles.length;
+		
+	for ( ; i < len; i++ )
+		titles[ i ].onclick = function( e ) {
+		
+			for ( var j = 0; j < len; j++ )
+				if ( this != titles[ j ] )
+					titles[ j ].parentNode.className = titles[ j ].parentNode.className.replace( / open/i, '' );
+		
+			var cn = this.parentNode.className;
+		
+			this.parentNode.className = ~cn.search( /open/i ) ? cn.replace( / open/i, '' ) : cn + ' open';
+		
+		};
+
+})( this, document );
+</script>
 
 </body>
