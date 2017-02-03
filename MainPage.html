@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
 <head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,7 +23,6 @@
 <!--Fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Satisfy|Rock+Salt|Poiret+One" rel="stylesheet">
  
-
 <style>
 	*{
 		margin:0;
@@ -35,52 +33,58 @@
   		background: url("images/background.jpg") no-repeat center center fixed; 
   		-webkit-background-size: cover;
   		background-size: cover;
+  		overflow: hidden;
 	}
 
 	#header {
-      position: fixed;
+      position: absolute;
       top: 0;
       left: 0;
       width: 100%;
-      height: 120px; 
+      height: 110px;
       overflow: hidden;
+      background-color: transparent;
     }
 	
 	#logo {
-      margin-top: -29px;
+      margin-top: -20px;
     }
 
 	.applewrap {
 		position: center;
-		width: 100%; 
+		width: 100%;
 		display: block;
 		height: 150px;
 		-webkit-border-radius: 4px;
 		-moz-border-radius: 4px;
 		border-radius: 4px;
+		-webkit-transform: rotate(348deg) scale(1.125) skew(1deg) translate(30px);	
+
 	}
  	
  	.applewrap .col {
-		float: top;
+		float: left;
 		box-sizing: border-box;
 		width: 260px;
 		height: 150px;
 		padding: 12px 7px 6px 22px;
+
 		color: #343434;
 		border: 1px solid;
+		border-color: white;
 		border-right: 1px solid #dadada;
 		outline-style:dashed;
 		outline-width:10px;
 		outline-color: #000000;
 		outline-offset: 0px;
+		margin-top: 18%;
 		-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
 		box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
-		background: -webkit-linear-gradient(top,rgba(0,0,0,1),rgba(0,0,0,.2));
+		background: -webkit-linear-gradient(bottom,rgba(0,0,0,1),rgba(0,0,0,.2));
 	}
 
 	.nav{
-		margin: 0 auto;
-		position: fixed;
+		margin-left: 5%;	
 	}
 
 	p{
@@ -97,7 +101,7 @@
 	}
 
 	.linkname:hover{
- 		-webkit-transform: translate(-7px);
+		-webkit-transform: scale(1.045)  translate(0px);
 	}
 	
 </style>
@@ -106,22 +110,22 @@
 
 	<header id="header">
       <div id="logo">
-        <h1><center><img src="images/image1.png"></center></h1>
+        <h1><center><img src="images/image1.jpg"></center></h1>
       </div>
 	</header>
 
 <!--Navigation-->
 <div class="applewrap nav">
-	<div class="applewrap col linkname" style="margin-top: 10px;">
+	<div class="applewrap col linkname">
 		<p style="color: lightgreen"><a href="Posts.html"  style="text-decoration:none; color: lightgreen;">POSTS</a></p>
 	</div>
-	<div class="applewrap col linkname" style="margin-top: 9px;">
+	<div class="applewrap col linkname">
 		<p style="padding:38px;"><a href="About Us.html"  style="text-decoration:none; color: white;">ABOUT US</a></p>
 	</div>
-	<div class="applewrap col linkname" style="margin-top: 9px;">
+	<div class="applewrap col linkname">
 		<p style="padding: 30px;"><a href="Contact Us.html"  style="text-decoration:none; color: white;">CONTACT US</a></p>
 	</div>
-	<div class="applewrap col linkname" style="margin-top: 9px;">
+	<div class="applewrap col linkname">
 		<p ><a href="Feedback.html"  style="text-decoration:none; color: white;">FEEDBACK</a></p>
 	</div>
 </div>
@@ -185,4 +189,3 @@
 </script>
 
 </body>
-</html>
