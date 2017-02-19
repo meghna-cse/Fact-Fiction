@@ -104,7 +104,7 @@
   		-webkit-transition: box-shadow 0.4s ease;
   	}
 
-	button{
+	#postBtn{
 		width: 100%;
 		padding:.5em;
 		margin-top:1em;
@@ -114,11 +114,12 @@
 		-webkit-transition: all 0.4s ease;
 	}
 
-	button:hover{
+	#postBtn:hover{
   		background:white;
   		color:#DC143C;
+  		
 	}
 
 	::-webkit-input-placeholder {
-   		font-family: 'Satisfy', cursive;
+   		font-family: 'Poiret One', cursive;
 	}
