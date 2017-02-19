@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
    
-    <title>Fact in Fiction</title>
+    <title>Fact-Fiction: Posts</title>
 
 <!--Bootstrap-->
 	<!-- Bootstrap core CSS -->
@@ -24,6 +24,9 @@
 		<link rel="stylesheet" type="text/css" href="styles/social-links.css">
 		<link rel="stylesheet" type="text/css" href="styles/subscribe.css">
 
+<!--JS Files-->
+	<script type="text/javascript" src="javascript/validation.js"></script>
+
 <!--Fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Satisfy|Rock+Salt|Poiret+One" rel="stylesheet">
 
@@ -34,15 +37,20 @@
 		}
 
 		body{
+			animation: 1.5s content-fade-in;
 			margin: 0 auto;
 			padding: 0;
-			overflow: scroll;
+			overflow: visible;
 			height: 100%; 
 			max-height: 100%; 
 			font-family:Sans-serif;
 			line-height: 1.2;
 		}
-			
+		
+		@keyframes content-fade-in {
+  			from { opacity: 0 }
+		}
+
 		main{
 			position: fixed;
 			top: 0; 
@@ -267,15 +275,13 @@
 					
 					<div id="current-page" class="navback"><li><span>Posts</span></li></div>
 
-					<a href="About Us.html"><div class="navback over" ><li><span>About Us</span></li></div></a>
+					<a href="About.html" style="text-decoration:none;"><div class="navback over" ><li><span>About</span></li></div></a>
 
-					<a href="Contact Us.html"><div class="navback over"  ><li><span>Contact Us</span></li></div></a>
+					<a href="Contact.html" style="text-decoration:none;"><div class="navback over"  ><li><span>Contact</span></li></div></a>
 
-			 
+					<a href="Feedback.html" style="text-decoration:none;"><div class="navback over" ><li><span>Feedback</span></li></div></a>
 
-					<a href="Feedback.html"><div class="navback over" ><li><span>Feedback</span></li></div></a>
-
-					<li style="color: gray; margin-top: 80px; "><span>Made by Meghna Jaglan</span></li></a>
+					<li style="color: gray; margin-top: 80px;  margin-top: 180px;"><span>Made by Meghna Jaglan</span></li></a>
 
 				</b>
 				</ul>
@@ -284,9 +290,9 @@
 <!---->
 
 <!--Social Media links-->
-<ul id="sociallinks">	
+<ul id="sociallinks" style="bottom: 300px;">	
 		<li>
-        	<a href="github.com/magiie/FactFiction"><i class="fa fa-github"></i></a>
+        	<a href="https://github.com/magiie/FactFiction"><i class="fa fa-github"></i></a>
         </li>
  		<li>
  			<a href="https://twitter.com"> <i class="fa fa-twitter-square"></i></a>
@@ -309,10 +315,10 @@
 <div id="subscribe">
 	<div id="subscribe-header"><b>SUBSCRIBE</b></div>
 	<div id="subscribe-body">
-		<form action="" method="post">
-  			<input type="text" placeholder="Your name">
- 			<input type="text" placeholder="Your email">
- 			<button>Subscribe now!</button>
+		<form name="myForm" action="" method="post" onsubmit="return(validate());">
+  			<input name="Name" type="text" placeholder="Your name">
+ 			<input name="EMail" type="text" placeholder="Your email">
+ 			<input type="submit" id="postBtn" class="btn-block" value="Subscribe now!"></input>
  		</form>		
 	</div>
 </div>
