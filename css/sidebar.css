@@ -1,0 +1,48 @@
+/*menu*/
+
+#nav{
+	position: fixed;
+	width: 25%;
+	height: 100%;
+	overflow: hidden; 
+	background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
+ 	background-blend-mode: multiply,multiply;
+  	box-shadow: 1px 1px 3px 0;
+}
+
+#nav div{
+	z-index: 3;
+	position: absolute;
+}
+
+#nav img{
+	margin-top: 20%;
+	margin-bottom: 20%;
+}
+
+#nav p{
+	font-size: 1.5em;
+	font-family: 'Poiret One', cursive;
+}
+
+a:hover{
+	color:black;
+}
+
+/*Social Links*/
+	#sociallinks li {
+    		list-style: none;
+    		display: inline;
+		font-size: 2.5em;
+		margin: 0.3em;
+	}
+
+	#sociallinks i{
+	 	color:rgba(0, 0, 0, 0.74902);
+	 	-webkit-transition: all 0.4s ease;
+	}
+
+	#sociallinks i:hover{
+		color: #333;
+	}
+
