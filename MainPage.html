@@ -1,251 +1,199 @@
 <!DOCTYPE html>
-<head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Fact-Fiction</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<!--CSS files-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/cube-effect.css">
 
-<!--Fonts-->
-	<link href="https://fonts.googleapis.com/css?family=Lato|Oswald|Raleway|Indie+Flower|Satisfy|Rock+Salt|Poiret+One" rel="stylesheet">
-
-<style>
-	*{
-		margin:0;
-		padding:0;
-	}
-
-	html{ 
-	 	animation: 1s bg-fade-in;
-	}
-
-	body{
-		animation: 2s content-fade-in;
-		background: url("images/Background.png") no-repeat;
-		background-size: 100% 40%;
-	}
-
-	@keyframes bg-fade-in {
-  		from { background: #FFFFFF;}
-	}
-
-	@keyframes content-fade-in {
-  		from { opacity: 0 }
-	}
-
-	#logo{
-		margin-top: 20%;
-		margin-bottom: 20%;
-	}
-	 
-
-/*ABOUT*/
-	#about{
-		overflow: auto; 
-		max-width: 70%;
-		margin: 0 auto 2rem;
-		margin-top: 18%;
-		margin-bottom: 8%;
-		border-top-right-radius: 1em;
-		border-top-left-radius: 1em;
-	}
+  </head>
+  
+  <style>
+  
+		body{
+			background: #bdc3c7;  /* fallback for old browsers */
+			background: -webkit-linear-gradient(to top, #2c3e50, #bdc3c7, #2c3e50);  /* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(180deg, rgba(238,250,247,1) 0%, rgba(31,132,198,1) 47%, rgba(24,100,149,1) 76%, rgba(14,64,96,1) 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		}
 		
-	#about p {
-		color: #555;
-		font-size: 1.5em;
-		font-family: 'Poiret One';
-		text-align: justify;
-	}
+		/*card-effect*/
+		.card-effect{
+			padding: 2em;
+			background-color: white;
+			transition: transform 300ms ease-out, box-shadow .3s cubic-bezier(.25,.8,.25,1);
+			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		}
 
-/*card-effect*/
-	.card-effect{
-  		padding: 2em;
-  		background-color: white;
-		transition: transform 300ms ease-out, box-shadow .3s cubic-bezier(.25,.8,.25,1);
-		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-	}
-
-	.card-effect:hover{
-  		transform: translateY(-2px);
-		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-		box-shadow: 0 14px 28px rgba(0,0,0,0.12), 0 10px 10px rgba(0,0,0,0.20);
-	}
-	.card-effect:active{
-		box-shadow: 0 14px 28px rgba(0,0,0,0.22), 0 10px 10px rgba(0,0,0,0.20);
-	}
+		.card-effect:hover{
+			transform: translateY(-2px);
+			box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+			box-shadow: 0 14px 28px rgba(0,0,0,0.12), 0 10px 10px rgba(0,0,0,0.20);
+		}
+		.card-effect:active{
+			box-shadow: 0 14px 28px rgba(0,0,0,0.22), 0 10px 10px rgba(0,0,0,0.20);
+		}
 
 
-/*ARTICLES*/
-	#articles{
-		margin-top: 10%;
-		margin-bottom: 10%;
-		text-align: center;
-		font-family: 'Poiret One';
-		padding: 1.5em;
-		transition: transform 300ms ease-out, box-shadow .3s cubic-bezier(.25,.8,.25,1);
-		box-shadow: 0 0.3em 0.4em rgba(0,0,0,0.12), 0 0.3em 0.4em rgba(0,0,0,0.24);
-		max-width: 80%;
-		color: #6f6f6f;
-		border-top-right-radius: 2em;
-		border-top-left-radius: 2em;
-	}
+  
+  </style>
+  
+  
+  <body>
 
-	.grid{
-		padding: 2em;
-		outline: #E6E6FA solid 0.1em;
-		-webkit-transition: all 0.8s ease;
-		transition: all 0.8s ease;
-		cursor: pointer;
-		background: white;
-	}	
-	 .grid:hover{
-		color: #333;
-	}	
-
-	.date{
-		text-align: left;
-		margin-top: 1.5em;
-	}
-	.more{
-	    	background-color: #87bcd7;
-	    	font-size: 12px;
-	    	color: #ffffff;
-	    	padding: 4px 8px;
-    		border-radius: 10px;
-	    	margin: 1em;
-    		font-weight: bold;
-	}
-	.more:hover{
-		color: #ffffff;
-		cursor: pointer;
-	}
-
-/*CONTACT*/
-	#contact{
- 
-		margin-bottom: 2em;
-		width: 20%;
-		text-align: center;
- 		position: relative;
-		left: 40%;
-		border-radius: 1.5em;
-		background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
- 		background-blend-mode: multiply,multiply;
-		box-shadow: 0 8px 6px -6px black;
-	}
+	<div class="container-fluid">
 	
-	/*Social Links*/
-	#sociallinks li {
-    		list-style: none;
-    		display: inline;
-		font-size: 2.5em;
-		margin: 0.3em;
-	}
-
-	#sociallinks i{
-	 	color:rgba(0, 0, 0, 0.74902);
-	 	-webkit-transition: all 0.4s ease;
-	}
-
-	#sociallinks i:hover{
-		color: #333;
-	}
-	
-</style>
-
-</head>
-<body>
-<div class="container-fluid">	
-
-<header id="header">
-<p style="font-family: Lato; font-size: 1em; color: white; margin: 1%;">Hello!<br>Welcome to Fact-Fiction.<p>
-<div id="logo">
-	<h1><center><img src="images/logo.png"></center></h1>
-</div>
-<ul class="cube-effect">
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-</ul>
-
-</header>
-
-
-
-
-<!--ABOUT-->
-<div id="about" name="about" class="card-effect">
+		<ul class="cube-effect">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		
+		<div class="row"  style="text-align: center;">
+		
+			<div class="col-md-12">
+				<ul class="nav nav-pills" style="padding: 2em;">
+					<li class="nav-item">
+						<a class="nav-link active" href="https://meghna-cse.github.io/Fact-Fiction/MainPage.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://meghna-cse.github.io/Fact-Fiction/Posts.html">Articles</a>
+					</li>
+					<li class="nav-item">
+						<a id="modal-1" href="#modal-container-1" role="button" class="btn" data-toggle="modal">Contact</a>
+						
+						<div class="modal fade" id="modal-container-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="myModalLabel">
+											Contact
+										</h5> 
+										<button type="button" class="close" data-dismiss="modal">
+											<span aria-hidden="true">×</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<form role="form">
+											<div class="form-group">
+												<label for="exampleInputEmail1">Email address</label>
+												<input class="form-control" id="exampleInputEmail1" type="email" />
+											</div>
+											<div class="form-group">
+												<label for="exampleInputPassword1">Password</label>
+												<input class="form-control" id="exampleInputPassword1" type="password" />
+											</div>
+											<div class="form-group">
+												<label for="exampleInputFile">Query</label>
+												<input class="form-control" id="exampletext" type="text" />
+											</div>
+											<button type="submit" class="btn btn-primary">
+												Submit
+											</button>
+										</form>
+										
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">
+											Close
+										</button>
+									</div>
+								</div>	
+							</div>
+						</div>
+						
+					</li>
+				</ul>
 				
-<h2 style="font-family: 'Rock Salt';">About This Site</h2>
+				
 
-<p>A good book will always lead you to another story - one that will take you back to the origins of an idea or further towards exploring it. Well written tales usually make their subjects and characters larger than life, not for glory of events or persons but out of admiration for ideas or principles; not because of the amount of power wielded by the protagonist but because of the style with which it is used; and not because of the quantum of odds overcome but because of the grace with which the odds are dealt.<br />
-Fact-Fiction is about books. Its about discovering the link between a story and the events, people and ideas that actually shaped it. Its for all of us who can't help reading - whether its a book, comic, blog or the back of a milk carton.</p>
-<!--The ABOUT content has been taken from FactBehindFiction.com-->	
-</div>
-<!---->
+				<img src="images/logo.png">
 
 
-<!--Articles-->
-<div id="articles" class="card-effect container-fluid">
-<h2 style="font-family: 'Rock Salt'; margin: 50px;">Articles</h2>
+		
+				<p class="text-center lead" style="padding: 3em">
+					A good book will always lead you to another story - one that will take you back to the origins of an idea or further towards exploring it. Well written tales usually make their subjects and characters larger than life, not for glory of events or persons but out of admiration for ideas or principles; not because of the amount of power wielded by the protagonist but because of the style with which it is used; and not because of the quantum of odds overcome but because of the grace with which the odds are dealt.
+					<!--The ABOUT content has been taken from FactBehindFiction.com-->	
+				</p>
+				
+				<div class="row">
+					<div class="col-md-3">
+					</div>
+					
+					<div class="col-md-6" style="padding: 3em">
+						<div class="jumbotron card-effect" style="background-color: #edeff0; ">
+							<p style="text-align: justify;">
+								Fact-Fiction is about books. Its about discovering the link between a story and the events, people and ideas that actually shaped it. Its for all of us who can't help reading - whether its a book, comic, blog or the back of a milk carton.</p>
+								<!--The ABOUT content has been taken from FactBehindFiction.com-->	
+							</p>
+						</div>
+					</div>
+					<div class="col-md-3">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="row"  style="background-color: #fdfeff; padding: 3em 0;">
+			<div class="col-md-1"></div>
+			
+			<div class="col-md-10">
+			
+				<div class="row">
+					<div class="col-md-12" >
+						<h3 style="align: center;">
+							Find out what inspired books like
+						</h3>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-4" >
+						<img alt="bookCover_toKillAMockingbird" src="images/bookCover_toKillAMockingbird.jpg" class="rounded-circle" />
+					</div>
+					<div class="col-md-4" >
+						<img alt="bookcover_jekyllHyde" src="images/bookcover_jekyllHyde.jpg" class="rounded-circle" />
+					</div>
+					<div class="col-md-4">
+						<img alt="bookCover_littleWomen" src="images/bookCover_littleWomen.jpg" class="rounded-circle" />
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-1"></div>
+		</div>
+		
+		
+		<div class="row">
+			<div class="col-md-12" style="background-color: #0e4060; padding: 3em;">
+				<blockquote class="blockquote" style=" color: rgb(243, 242, 242);" >
+					<h3 class="mb-0">
+						A book is the only place in which you can examine a fragile thought without breaking it, or explore an explosive idea without fear it will go off in your face. .
+					</h3>
+					<footer class="blockquote-footer">Edward P. Morgan</footer>
+				</blockquote>
+				<h3>
+					<a href="https://meghna-cse.github.io/Fact-Fiction/Posts.html"><button type="button" class="btn btn-secondary">Explore »</button></a>
+				</h3>
+			</div>
+		</div>
+		
+	</div>
 
-<div class="row"">
-<div class="col-xs-4 grid">
-	<h1>Book Title</h1>
-	<hr>
-	<h2>AUTHOR: Author Name</h2>
-	<div class="date"><i class="fa fa-calendar"></i> Date</div>
-</div>
-<div class="col-xs-4 grid">
-	<h1>Book Title</h1>
-	<hr>
-	<h2>AUTHOR: Author Name</h2>
-	<div class="date"><i class="fa fa-calendar"></i> Date</div>
-</div>
-<div class="col-xs-4 grid">
-	<h1>Book Title</h1>
-	<hr>
-	<h2>AUTHOR: Author Name</h2>
-	<div class="date"><i class="fa fa-calendar"></i> Date</div>
-</div>
-</div>
-
-<br />
-<a href="Posts.html" style="text-decoration:none; float: right;" class="more">See More articles &rarr;</a>
-</div>
-<!---->
-
-
-<!--Contact-->
-<div id="contact">
-<ul id="sociallinks">	
-<li>
-	<a href="https://github.com/meghnajaglan/FactFiction"><i class="fa fa-github"></i></a>
-</li>
-<li>
-        <a href="https://linkedin.com"><i class="fa fa-linkedin-square"></i></a>
-</li>
-</ul>
-
-</div>
-
-</div>
-</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

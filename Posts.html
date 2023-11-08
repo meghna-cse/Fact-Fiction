@@ -22,7 +22,6 @@
  
 		
 <!--CSS files-->
-	<link rel="stylesheet" type="text/css" href="css/sidebar.css">
 	<link rel="stylesheet" type="text/css" href="css/cube-effect.css">
 
 <style>
@@ -42,7 +41,7 @@
 	}
 	
 	#main-content{
-		margin-left: 28%;
+		
 		text-align: center;
 		align-items: center;
 		font-size: 1.2em;
@@ -51,7 +50,7 @@
 	}
 
 	.grid{
-		margin: 1.2em;
+		
 		padding: 2em;
 		outline: #E6E6FA solid 0.1em;
 		-webkit-transition: all 0.8s ease;
@@ -73,127 +72,155 @@
 </head>
 <body>		
 
-<!--Sidebar-->
-<nav id="nav">
-<ul class="cube-effect" style="z-index: 1;">
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-</ul>
 
-<div style="margin-top: 2%; z-index: 3;">
-
-<a href="MainPage.html"><img src="images/logo.png"  width="80%"></a><br /><br />
-
-<p><b><a href="MainPage.html#about" style="text-decoration:none; color: #333;">About</a><br /><br />
-
-<ul id="sociallinks">	
-<li>
-	<a href="https://github.com/meghnajaglan/Fact-Fiction"><i class="fa fa-github"></i></a>
-</li>
-<li>
-        <a href="https://www.linkedin.com/in/meghnajaglan/"><i class="fa fa-linkedin-square"></i></a>
-</li>
-</ul>
-
-</div>
-</nav>
-<!---->
 
 
 <!--Grids-->
 <div class="container-fluid" id="main-content">
 
-<div style="text-align: right; margin-top: 2%;">
-View: <button class="btn btn-default">Default</button><button class="btn btn-default"><i class="fa fa-list"></i></button>
-</div>
+	<div class="row" style="z-index: 1; position: fixed; width: 100%; background: linear-gradient(0deg, rgba(238,250,247,1) 0%, rgba(31,132,198,1) 23%, rgba(24,100,149,1) 56%, rgba(14,64,96,1) 92%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */">
+		<div class="col-md-12">
+		
+			<ul class="nav nav-pills" >
+				<li class="nav-item">
+					<a class="nav-link " style="color: white; text-decoration: none; " href="#">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" style="color: white; text-decoration: none; " href="https://meghna-cse.github.io/Fact-Fiction/Posts.html">Articles</a>
+				</li>
+			</ul>
+			
+			<ul class="cube-effect">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		
+		</div>
+	</div>
+	
 
-<div>
-<div class="row">
-<div class="show col-xs-5 grid">
-	<a href="article.html" style="text-decoration:none; color: #333;">
-	<h1>Book Title</h1>
-	<hr>
-	<h2>AUTHOR: Author Name</h2>
-	<div class="date"><i class="fa fa-calendar"></i> Date</div>
-	</a>
-</div>
-<div class="show col-xs-5 grid">
-	<a href="article.html" style="text-decoration:none; color: #333;">
-	<h1>Book Title</h1>
-	<hr>
-	<h2>AUTHOR: Author Name</h2>
-	<div class="date"><i class="fa fa-calendar"></i> Date</div>
-	</a>
-</div>
-</div>
+	<div style="margin-top: 2em;">
+		<div class="row">
+			<div style="text-align: right; margin-top: 2%; padding: 1em;">
+				View: <button class="btn btn-default">Default</button><button class="btn btn-default"><i class="fa fa-list"></i></button>
+			</div>
+			
+			<div class="show col-xs-4 grid">
+				<a href="article.html" style="text-decoration:none; color: #333;">
+				<h1>Book Title</h1>
+				<hr>
+				<h2>AUTHOR: Author Name</h2>
+				<div class="date"><i class="fa fa-calendar"></i> Date</div>
+				</a>
+			</div>
+			<div class="show col-xs-4 grid">
+				<a href="article.html" style="text-decoration:none; color: #333;">
+				<h1>Book Title</h1>
+				<hr>
+				<h2>AUTHOR: Author Name</h2>
+				<div class="date"><i class="fa fa-calendar"></i> Date</div>
+				</a>
+			</div>
+			<div class="show col-xs-4 grid">
+				<a href="article.html" style="text-decoration:none; color: #333;">
+				<h1>Book Title</h1>
+				<hr>
+				<h2>AUTHOR: Author Name</h2>
+				<div class="date"><i class="fa fa-calendar"></i> Date</div>
+				</a>
+			</div>
+		</div>
 
-<div class="row">
-<div class="show col-xs-5 grid">
-	<a href="article.html" style="text-decoration:none; color: #333;">
-	<h1>Book Title</h1>
-	<hr>
-	<h2>AUTHOR: Author Name</h2>
-	<div class="date"><i class="fa fa-calendar"></i> Date</div>
-	</a>
-</div>
-<div class="show col-xs-5 grid">
-	<a href="article.html" style="text-decoration:none; color: #333;">
-	<h1>Book Title</h1>
-	<hr>
-	<h2>AUTHOR: Author Name</h2>
-	<div class="date"><i class="fa fa-calendar"></i> Date</div>
-	</a>
-</div>
-</div>
+		<div class="row">
+			<div class="show col-xs-4 grid">
+				<a href="article.html" style="text-decoration:none; color: #333;">
+				<h1>Book Title</h1>
+				<hr>
+				<h2>AUTHOR: Author Name</h2>
+				<div class="date"><i class="fa fa-calendar"></i> Date</div>
+				</a>
+			</div>
+			<div class="show col-xs-4 grid">
+				<a href="article.html" style="text-decoration:none; color: #333;">
+				<h1>Book Title</h1>
+				<hr>
+				<h2>AUTHOR: Author Name</h2>
+				<div class="date"><i class="fa fa-calendar"></i> Date</div>
+				</a>
+			</div>
+			<div class="show col-xs-4 grid">
+				<a href="article.html" style="text-decoration:none; color: #333;">
+				<h1>Book Title</h1>
+				<hr>
+				<h2>AUTHOR: Author Name</h2>
+				<div class="date"><i class="fa fa-calendar"></i> Date</div>
+				</a>
+			</div>
+		</div>
 
-<div class="row">
-<div class="show col-xs-5 grid">
-	<a href="article.html" style="text-decoration:none; color: #333;">
-	<h1>Book Title</h1>
-	<hr>
-	<h2>AUTHOR: Author Name</h2>
-	<div class="date"><i class="fa fa-calendar"></i> Date</div>
-	</a>
-</div>
-<div class="show col-xs-5 grid">
-	<a href="article.html" style="text-decoration:none; color: #333;">
-	<h1>Book Title</h1>
-	<hr>
-	<h2>AUTHOR: Author Name</h2>
-	<div class="date"><i class="fa fa-calendar"></i> Date</div>
-	</a>
-</div>
-</div>
+		<div class="row">
+			<div class="show col-xs-4 grid">
+				<a href="article.html" style="text-decoration:none; color: #333;">
+				<h1>Book Title</h1>
+				<hr>
+				<h2>AUTHOR: Author Name</h2>
+				<div class="date"><i class="fa fa-calendar"></i> Date</div>
+				</a>
+			</div>
+			<div class="show col-xs-4 grid">
+				<a href="article.html" style="text-decoration:none; color: #333;">
+				<h1>Book Title</h1>
+				<hr>
+				<h2>AUTHOR: Author Name</h2>
+				<div class="date"><i class="fa fa-calendar"></i> Date</div>
+				</a>
+			</div>
+			<div class="show col-xs-4 grid">
+				<a href="article.html" style="text-decoration:none; color: #333;">
+				<h1>Book Title</h1>
+				<hr>
+				<h2>AUTHOR: Author Name</h2>
+				<div class="date"><i class="fa fa-calendar"></i> Date</div>
+				</a>
+			</div>
+		</div>
 
 
-<div class="row">
-<div class="show col-xs-5 grid">
-	<a href="article.html" style="text-decoration:none; color: #333;">
-	<h1>Book Title</h1>
-	<hr>
-	<h2>AUTHOR: Author Name</h2>
-	<div class="date"><i class="fa fa-calendar"></i> Date</div>
-	</a>
-</div>
-<div class="show col-xs-5 grid">
-	<a href="article.html" style="text-decoration:none; color: #333;">
-	<h1>Book Title</h1>
-	<hr>
-	<h2>AUTHOR: Author Name</h2>
-	<div class="date"><i class="fa fa-calendar"></i> Date</div>
-	</a>
-</div>
-</div>
-
-</div>
+		<div class="row">
+			<div class="show col-xs-4 grid">
+				<a href="article.html" style="text-decoration:none; color: #333;">
+				<h1>Book Title</h1>
+				<hr>
+				<h2>AUTHOR: Author Name</h2>
+				<div class="date"><i class="fa fa-calendar"></i> Date</div>
+				</a>
+			</div>
+			<div class="show col-xs-4 grid">
+				<a href="article.html" style="text-decoration:none; color: #333;">
+				<h1>Book Title</h1>
+				<hr>
+				<h2>AUTHOR: Author Name</h2>
+				<div class="date"><i class="fa fa-calendar"></i> Date</div>
+				</a>
+			</div>
+			<div class="show col-xs-4 grid">
+				<a href="article.html" style="text-decoration:none; color: #333;">
+				<h1>Book Title</h1>
+				<hr>
+				<h2>AUTHOR: Author Name</h2>
+				<div class="date"><i class="fa fa-calendar"></i> Date</div>
+				</a>
+			</div>
+		</div>
+	</div>
 <!---->
 </body>
 </html>
